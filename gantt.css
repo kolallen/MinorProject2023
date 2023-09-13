@@ -1,0 +1,91 @@
+#id1 {
+        height: 400px;
+        width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+      }
+
+      #id2 {
+        height: 340px;
+        width: 300px;
+      }
+      #id3 {
+        height: 150px;
+        width: 250px;
+        margin: 5px;
+      }
+
+      .rd {
+        border-radius: 20px;
+        margin: 10px;
+      }
+      .brg {
+        background-color: yellow;
+      }
+
+
+#sumit{
+color: brown;
+}
+/* Reset some default styles for the page */
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Define the header styles */
+header {
+  background-color: maroon;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns logo to the left and sign-out link to the right */
+  padding: 10px;
+}
+
+.logo img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.college-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sign-out a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sign-out a:hover {
+  text-decoration: underline;
+}
+
+/* Define the footer styles */
+footer {
+  background-color: maroon;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Add this CSS rule to style the maroon buttons */
+.btn-maroon {
+  background-color: maroon;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px; /* Add spacing between buttons */
+}
+
+.btn-maroon:hover {
+  background-color: darkred; /* Change color on hover if desired */
+  color: white;
+  text-decoration: none;
+}

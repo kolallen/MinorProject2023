@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sim2.css" />
+    <script src="sim2.js"></script>
+    <script src="hints2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+    <script src="TableLayout.js"></script>
+  </head>
+
+  <body>
+    <div id="header_main">
+      <pre class="myDiv">
+        <h2><b>VIRTUAL LABS: SOFTWARE ENGINEERING - FUNCTIONAL USE CASES</b></h2></pre>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="gantt.html">
+              <span>
+                <center>
+                  <img
+                    src="https://cdn.glitch.com/4c13ff70-b984-4f5b-aef6-64e38ef0e78b%2F5.png?v=1604268549935"
+                    height="50px"
+                    weidth="50px"
+                  /><br />
+                  Introduction
+                </center>
+              </span></a
+            >
+          </li>
+          <li class="active">
+            <a href="Theory.html">
+              <span>
+                <center>
+                  <img
+                    src="https://cdn.glitch.com/4c13ff70-b984-4f5b-aef6-64e38ef0e78b%2F7.png?v=1604268957184"
+                    height="50px"
+                    weidth="50px"
+                  /><br />
+                  Theory
+                </center>
+              </span></a
+            >
+          </li>
+          <li>
+            <a href="CaseStudy.html">
+              <span>
+                <center>
+                  <img
+                    src="https://cdn.glitch.com/4c13ff70-b984-4f5b-aef6-64e38ef0e78b%2F4.png?v=1604268538415"
+                    height="50px"
+                    weidth="50px"
+                  /><br />
+                  Case Study
+                </center>
+              </span></a
+            >
+          </li>
+          <li>
+            <a href="Selfeval.html">
+              <span>
+                <center>
+                  <img
+                    src="https://cdn.glitch.com/4c13ff70-b984-4f5b-aef6-64e38ef0e78b%2F3.png?v=1604268534574"
+                    height="50px"
+                    weidth="50px"
+                  /><br />
+                  Exercises
+                </center>
+              </span></a
+            >
+          </li>
+          <li>
+            <a href="simul.html">
+              <span>
+                <center>
+                  <img
+                    src="https://cdn.glitch.com/4c13ff70-b984-4f5b-aef6-64e38ef0e78b%2F2.png?v=1604268530601"
+                    height="50px"
+                    weidth="50px"
+                  /><br />
+                  Simulation
+                </center>
+              </span></a
+            >
+          </li>
+          <li>
+            <a href="ref.html">
+              <span>
+                <center>
+                  <img
+                    src="https://cdn.glitch.com/4c13ff70-b984-4f5b-aef6-64e38ef0e78b%2F1.png?v=1604268526531"
+                    height="50px"
+                    weidth="50px"
+                  /><br />
+                  References
+                </center>
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Case study - Restaurant Food Ordering System </h2>
+    <div>
+        <p> Consider you're going out for a dinner to your favourite restaurant. Now think of what are all the steps you'll follow to eat the food here. </p>
+    </div>
+    <div>
+        <h3>Drag the correct actor and drop it in the answer box on the right</h3>
+        <div id="outerdiv">
+            <div id="dragndrop">
+                <div class ="left" id="item1" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Cashier</p>
+                </div> 
+                <div class ="left" id="item2" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Chef</p>
+                </div> 
+                <div class ="left" id="item3" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Customer</p>
+                </div> 
+                <div class ="left" id="item4" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Cutlery</p>
+                </div> 
+                <div class ="left" id="item5" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Kitchen</p>
+                </div> 
+                <div class ="left" id="item6" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Menu</p>
+                </div> 
+                <div class ="left" id="item7" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Receipt</p>
+                </div>
+                <div class ="left" id="item8" draggable = "true" ondragstart = "return dragStart(event)">
+                        <p>Waiter</p>
+                </div> 
+            </div>
+            <div id="ansdragndrop">
+                <div class = "ansBox" id="actor1" ondragenter="return dragEnter(event)" ondrop="return dragDrop1(event)" ondragover="return dragOver(event)">ans here</div>
+                <div class = "ansBox" id="actor2" ondragenter="return dragEnter(event)" ondrop="return dragDrop2(event)" ondragover="return dragOver(event)">ans here</div>
+                <div class = "ansBox" id="actor3" ondragenter="return dragEnter(event)" ondrop="return dragDrop3(event)" ondragover="return dragOver(event)">ans here</div>
+                <div class = "ansBox" id="actor4" ondragenter="return dragEnter(event)" ondrop="return dragDrop4(event)" ondragover="return dragOver(event)">ans here</div>
+            </div>
+        </div>
+
+        <div id="anotherdiv">
+          <button class = "reset" onclick="check_actors()">Check actors</button>
+          <button class="reset" onclick="window.location.reload()">Reset</button>
+          <br>
+          <hr class="solid">
+          <br>
+          <div id="diagram_div">
+            <h3> Try drawing a usecase diagram by filling in the details below </h3>
+            <div class="diagram_inside_div">
+              <label> Enter actors : </label>
+              <input type="text" id="actor_diag" name="actorsfordiagram">
+              <button class="reset" onclick="add_actor(document.getElementById('actor_diag').value)">Add actor</button>
+              <br><br>
+            </div>
+            <div class="diagram_inside_div">
+              <label>Enter use cases:</label>
+              <input type="text" id="usecase_diag" name="a2">
+              <button class="reset" onclick="add_usecase(document.getElementById('usecase_diag').value)">Add usecase</button>
+              <br><br>
+          </div>
+          <div class="diagram_inside_div">
+              <label> Enter relationship : </label> <br> <br>
+              <label>From : </label>
+              <input type="text" id="from_diag" name="actorsfordiagram">
+              <label>To : </label>
+              <input type="text" id="to_diag" name="actorsfordiagram">
+              <label>Relationship Type : </label>
+              <select id="rel_diag">
+                  <option value="normal">normal</option>
+                  <option value="includes">includes</option>
+                  <option value="extends">extends</option>
+              </select>
+
+              <button class="reset" onclick="add_relationship(document.getElementById('from_diag').value, document.getElementById('to_diag').value, document.getElementById('rel_diag').value)">Add relationship</button>
+              <br><br>
+          </div>
+        </div>
+        <br>
+        <button  class="reset" type="submit" onclick="init()">Draw Diagram!</button>
+        <div id="myDiagramDiv"></div>
+    </div>
+  </div>
+</div>
+
+ <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+  <div style="background-color: #6351ce;">
+      <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <br />
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+
+            <h6 class="text-uppercase font-weight-bold">
+              Knwo more about virtal labs
+            </h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              Its main objective is to provide remote-access to Labs in various
+              disciplines of Science and Engineering. These Virtual Labs would
+              cater to students at the undergraduate level, post graduate level
+              as well as to research scholars.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a href="http://vlabs.iitkgp.ac.in/se/3/">IIT-KGP V-Labs</a>
+            </p>
+            <p>
+              <a
+                href="https://www.tutorialspoint.com/software_engineering/index.htm"
+                >Software Engineering</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm"
+                >Uml Diagrams</a
+              >
+            </p>
+            <p>
+              <a href="https://app.diagrams.net/">Draw.io</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Creaters</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p><i class="fa fa-home mr-3"></i>SUMIT CHAVDA(9892260330)</p>
+            <p><i class="fa fa-phone mr-3"></i> NIRAMAY KOLALE(2020201045)</p>
+            <p><i class="fa fa-envelope mr-3"></i> TEJAS DAVDA(2020201092)</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
+
